@@ -54,9 +54,8 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <iframe src="https://free.timeanddate.com/clock/i7x5d3o3/n170/szw110/szh110/cf100/hnce1ead6"
-                                frameborder="0" width="110" height="110"></iframe>
-
+                            <iframe src="https://free.timeanddate.com/clock/i7x5d3o3/n170/szw160/szh160/cf100/hnce1ead6"
+                                frameborder="0" width="160" height="160"></iframe>
                         </div>
 
                         <div class="col-sm-6">
