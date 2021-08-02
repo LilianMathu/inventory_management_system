@@ -47,6 +47,22 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-8">
+                <div class="jumbotron" style="width: 100%; height: 100%;">
+                    <h1>Welcome Admin, </h1>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
