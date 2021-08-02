@@ -20,10 +20,6 @@
 </head>
 
 <body>
-<!-- test if bootstrap is working -->
-    <div class="jumbotron">
-        <h1>Hello world</h1>
-    </div>
 
 </body>
 
