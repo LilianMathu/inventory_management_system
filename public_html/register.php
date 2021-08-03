@@ -33,7 +33,7 @@
       
     ?>
 
-    <div class="container">
+    <div class="container mt-3 mb-3">
         <div class="card mx-auto" style="width: 30rem;">
             <div class="card-header">Register</div>
             <div class="card-body">
