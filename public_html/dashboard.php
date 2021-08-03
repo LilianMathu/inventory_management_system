@@ -83,7 +83,7 @@
                         <h5 class="card-title">Categories</h5>
                         <p class="card-text">Here you can manage your categories and add new parent and sub categories
                         </p>
-                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" data-toggle="modal" data-target="#form_categories" class="btn btn-primary">Add </a>
                         <a href="#" class="btn btn-primary">Manage </a>
 
                     </div>
@@ -96,7 +96,7 @@
                         <h5 class="card-title">Brands</h5>
                         <p class="card-text">Here you can manage your Brands and add new brands.
                         </p>
-                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" data-toggle="modal" data-target="#form_brands" class="btn btn-primary">Add </a>
                         <a href="#" class="btn btn-primary">Manage </a>
 
                     </div>
@@ -109,7 +109,7 @@
                         <h5 class="card-title">Products</h5>
                         <p class="card-text">Here you can manage your Products and add new products.
                         </p>
-                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" data-toggle="modal" data-target="#form_products" class="btn btn-primary">Add </a>
                         <a href="#" class="btn btn-primary">Manage </a>
 
                     </div>
@@ -118,6 +118,26 @@
 
         </div>
     </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categories">
+        Launch demo modal
+    </button> -->
+
+    <!-- Category modal form -->
+    <?php 
+        include_once("./templates/categories.php");
+    ?>
+
+    <!-- Brands modal form -->
+    <?php 
+        include_once("./templates/brands.php");
+    ?>
+
+    <!-- Products modal form -->
+    <?php 
+        include_once("./templates/products.php");
+    ?>
 
 </body>
 
