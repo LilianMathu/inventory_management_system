@@ -36,7 +36,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-4">
-                <div class="card mx-auto" style="width: 18rem;">
+                <div class="card mx-auto" style="width: 22rem;">
                     <img class="card-img-top mx-auto" style="width: 60%" src="./images/login.jpg" alt="user">
                     <div class="card-body">
                         <h5 class="card-title">Profile Information</h5>
@@ -75,19 +75,47 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-3 mb-3">
         <div class="row">
             <div class="col-md-4">
+                <div class="card mx-auto" style="width: 100%; height: 100%;">
+                    <div class=" card-body">
+                        <h5 class="card-title">Categories</h5>
+                        <p class="card-text">Here you can manage your categories and add new parent and sub categories
+                        </p>
+                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" class="btn btn-primary">Manage </a>
 
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-4">
+                <div class="card mx-auto" style="width: 100%; height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Brands</h5>
+                        <p class="card-text">Here you can manage your Brands and add new brands.
+                        </p>
+                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" class="btn btn-primary">Manage </a>
 
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-4">
+                <div class="card mx-auto" style="width: 100%; height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">Here you can manage your Products and add new products.
+                        </p>
+                        <a href="#" class="btn btn-primary">Add </a>
+                        <a href="#" class="btn btn-primary">Manage </a>
 
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
