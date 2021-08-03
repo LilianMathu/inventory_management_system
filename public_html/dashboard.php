@@ -59,10 +59,34 @@
                         </div>
 
                         <div class="col-sm-6">
-
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Orders</h5>
+                                    <p class="card-text">Here you can make invoices and create new orders</p>
+                                    <a href="#" class="btn btn-primary">New Orders</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+
             </div>
         </div>
     </div>
