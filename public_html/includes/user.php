@@ -52,6 +52,33 @@
             }
 
         }
+
+        public function userLogin($email, $password)
+        {
+            $pre_stmt = $this->con->prepare("SELECT id, username, password, last_login FROM user WHERE email = ? ");
+            $pre_stmt->bind_param("s", $email);
+            $pre_stmt->execute() or die($this->con->error);
+            $result = $pre_stmt->get_result();
+
+            if ($result->num_rows < 1) {
+                return "NOT_REGISTERED";
+            } else {
+                $row = $result->fetch_assoc();
+                if (password_verify($password, $row["password"])) {
+                    $_SESSION["userid"] = $row["id"];
+                    $_SESSION["username"] = $row["username"];
+                    $_SESSION["last_login"] = $row["last_login"];
+
+
+                   
+                    
+                } else {
+                    return "PASSWORD_NOT MATCHED";
+                }
+                
+            }
+            
+        }
         
     }
 
