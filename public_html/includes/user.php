@@ -56,6 +56,6 @@
     }
 
 $user = new User();
-echo $user->CreateUserAccount("Lily", "lily@mail.com", "1234567890", "Admin");
+echo $user->CreateUserAccount("test", "test@mail.com", "123456", "Other");
    
-?>xml_error_string
+?>
