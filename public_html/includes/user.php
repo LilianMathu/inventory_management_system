@@ -71,7 +71,7 @@
 
 
                     //Updating user last login time
-                    $last_login = date("Y-d-m h-m-s");                    
+                    $last_login = date("Y-m-d h-i-s");                    
                     $pre_stmt = $this->con->prepare("UPDATE user SET last_login = ? WHERE email = ? ");
                     $pre_stmt->bind_param("ss", $last_login, $email);
                     $result = $pre_stmt->execute() or die($this->con->error);
@@ -94,5 +94,7 @@
 
 $user = new User();
 echo $user->CreateUserAccount("test", "test@mail.com", "123456", "Other");
+
+echo $user->userLogin("lily@mail.com", "1234567890");
    
 ?>
