@@ -70,7 +70,17 @@
                     $_SESSION["last_login"] = $row["last_login"];
 
 
-                   
+                    //Updating user last login time
+                    $last_login = date("Y-d-m h-m-s");                    
+                    $pre_stmt = $this->con->prepare("UPDATE user SET last_login = ? WHERE email = ? ");
+                    $pre_stmt->bind_param("ss", $last_login, $email);
+                    $result = $pre_stmt->execute() or die($this->con->error);
+
+                    if ($result) {
+                        return 1;
+                    } else {
+                        return 0; 
+                    }
                     
                 } else {
                     return "PASSWORD_NOT MATCHED";
