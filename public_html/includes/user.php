@@ -92,11 +92,11 @@
         
     }
 
-$user = new User();
-echo $user->CreateUserAccount("test", "test@mail.com", "123456", "Other");
+// $user = new User();
+// echo $user->CreateUserAccount("test", "test@mail.com", "123456", "Other");
 
-echo $user->userLogin("lily@mail.com", "1234567890");
+// echo $user->userLogin("lily@mail.com", "1234567890");
 
-echo $_SESSION["username"];
+// echo $_SESSION["username"];
 
 ?>
