@@ -37,38 +37,46 @@
         <div class="card mx-auto" style="width: 30rem;">
             <div class="card-header">Register</div>
             <div class="card-body">
-                <form action="" id="registration_form" method="">
+
+                <form action="" id="registration_form" onsubmit="return false" autocomplete="off">
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" name="username" id="username" class="form-control"
                             placeholder="enter username">
+                        <small id="u_error" class="form-text text-muted"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="enter email">
-                        <small class="form-text text-muted"> We'll never share your email with
-                            anyone</small>
+                        <small class="form-text text-muted"> We'll never share your email with anyone</small>
                     </div>
 
                     <div class="form-group">
                         <label for="password1">Password</label>
                         <input type="password" name="password1" id="password1" class="form-control"
                             placeholder="password">
+                        <small id="p1_error" class="form-text text-muted"></small>
+
                     </div>
 
                     <div class="form-group">
                         <label for="password2">Re-enter password</label>
                         <input type="password" name="password2" id="password2" class="form-control"
                             placeholder="password">
+                        <small id="p2_error" class="form-text text-muted"></small>
+
                     </div>
 
                     <div class="form-group">
                         <label for="usertype">UserType</label>
                         <select name="userType" id="userType" class="form-control">
-                            <option value="1">Admin</option>
-                            <option value="0">Other</option>
+                            <option value="">Choose User Type</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Other">Other</option>
                         </select>
+                        <small id="t_error" class="form-text text-muted"></small>
+
                     </div>
 
                     <button type="submit" name="user_register" class="btn btn-primary">
