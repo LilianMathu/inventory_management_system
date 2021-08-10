@@ -39,6 +39,7 @@
             <div class="card-body">
 
                 <form action="" id="registration_form" onsubmit="return false" autocomplete="off">
+
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" name="username" id="username" class="form-control"
@@ -57,7 +58,6 @@
                         <input type="password" name="password1" id="password1" class="form-control"
                             placeholder="password">
                         <small id="p1_error" class="form-text text-muted"></small>
-
                     </div>
 
                     <div class="form-group">
@@ -65,7 +65,6 @@
                         <input type="password" name="password2" id="password2" class="form-control"
                             placeholder="password">
                         <small id="p2_error" class="form-text text-muted"></small>
-
                     </div>
 
                     <div class="form-group">
@@ -76,7 +75,6 @@
                             <option value="Other">Other</option>
                         </select>
                         <small id="t_error" class="form-text text-muted"></small>
-
                     </div>
 
                     <button type="submit" name="user_register" class="btn btn-primary">
