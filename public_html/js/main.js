@@ -22,7 +22,11 @@ $(document).ready(function () {
             status = true;
         }
 
-        
+        if (!e_patt.test(email.val())) {
+            email.addClass("border-danger");
+            $("$e_error").html();
+            status = true;
+        }
 
     })
 });
