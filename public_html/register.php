@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="enter email">
-                        <small class="form-text text-muted"> We'll never share your email with anyone</small>
+                        <small id="e_error" class="form-text text-muted"> We'll never share your email with anyone</small>
                     </div>
 
                     <div class="form-group">
