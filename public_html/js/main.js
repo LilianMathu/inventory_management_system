@@ -61,13 +61,19 @@ $(document).ready(function () {
             $("#t_error").html("");
             status = true;
         }
-        if (pass1.val() == pass2.val()) {
+        if (pass1.val() == pass2.val() && status == true) {
             $.ajax({
-                url: DOMAIN + "includes.process.php",
+                url: DOMAIN + "includes/process.php",
                 method: "POST",
                 data: $("#registration_form").serialize(),
                 success: function (data) {
-                    alert(data);
+                    if (data == "EMAIL_ALREADY_EXIST") {
+                        alert("Email already in use");
+                    } else if(data == "SOME_ERROR") {
+                        alert("something is wrong");
+                    } else {
+                    window.location.href = encodeURI(DOMAIN + "/index.php?msg=you%are%registered%proceed%to%login");  
+                    }
                 }
            })
         } else {
