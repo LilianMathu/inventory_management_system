@@ -28,7 +28,7 @@ class DBOperations
         
     }
 
-    public function getAllRecord($table){
+    public function getAllRecords($table){ // can get data from any table
         $pre_stmt = $this->con->prepare("SELECT * from ".$table);
         $pre_stmt->execute() or die($this->con->error);
         $result = $pre_stmt->get_result();
@@ -39,7 +39,7 @@ class DBOperations
                 $rows[] = $row;
             }
 
-            return $row;
+            return $rows;
 
         }
 
@@ -47,6 +47,12 @@ class DBOperations
     }
 }
 
-$opr = new DBOperations();
-echo $opr->addCategory(1, "SMmartphones");
+// $opr = new DBOperations();
+
+// echo $opr->addCategory(1, "SMmartphones");
+
+// echo "<pre>";
+
+// print_r($opr->getAllRecords("categories"));
+
 ?>
