@@ -10,11 +10,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <form id="form_category" onsubmit="return false">
+                    <div class="form-group">
+                        <label>Category Name</label>
+                        <input type="text" class="form-control" id="categoryName" name="categoryName" id="categoryName"
+                            placeholder="Category Name">
+                        <small id="cat_error" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Parent category</label>
+                        <select class="form-control" name="parent-cat" id="parent-cat">
+                            <option value="0">Root</option>
+                        </select>
+                        <small id="cat_error"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
+
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

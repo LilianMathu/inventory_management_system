@@ -76,4 +76,17 @@ $(document).ready(function () {
         }
 
     })
+
+    // fetch category
+    fetchCategory();
+    function fetchCategory() {
+        $.ajax({
+            url: DOMAIN + "/include/process.php",
+            method: "POST",
+            data: { getCategory: 1 },
+            success: function (data) {
+                alert(data);
+            }
+        })
+    }
 });

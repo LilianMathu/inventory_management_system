@@ -111,7 +111,6 @@
                         </p>
                         <a href="#" data-toggle="modal" data-target="#form_products" class="btn btn-primary">Add </a>
                         <a href="#" class="btn btn-primary">Manage </a>
-
                     </div>
                 </div>
             </div>
