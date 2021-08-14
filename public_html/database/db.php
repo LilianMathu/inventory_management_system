@@ -11,7 +11,7 @@ class Database
             $this->con = new mysqli(HOST, USER, PASS, DB);
             
             if ($this->con) {
-                echo "connected";
+                // echo "connected";
 
                 return $this->con;
 

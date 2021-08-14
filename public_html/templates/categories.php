@@ -13,8 +13,8 @@
                 <form id="form_category" onsubmit="return false">
                     <div class="form-group">
                         <label>Category Name</label>
-                        <input type="text" class="form-control" id="category_name" name="category_name"
-                            id="category_name" placeholder="Category Name">
+                        <input type="text" class="form-control" name="category_name" id="category_name"
+                            placeholder="Category Name">
                         <small id="cat_error" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group">

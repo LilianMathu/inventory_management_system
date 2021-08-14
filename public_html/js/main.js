@@ -85,13 +85,14 @@ $(document).ready(function () {
 
     // fetch category
     fetch_category();
+
     function fetch_category() {
         $.ajax({
-            url: DOMAIN + "/include/process.php",
+            url: DOMAIN + "/includes/process.php",
             method: "POST",
             data: { getCategory: 1 },
             success: function (data) {
-                alert(data);
+                $("#parent_cat").html(data);
             }
         })
     }
