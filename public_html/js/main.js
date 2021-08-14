@@ -78,8 +78,8 @@ $(document).ready(function () {
     })
 
     // fetch category
-    fetchCategory();
-    function fetchCategory() {
+    fetch_category();
+    function fetch_category() {
         $.ajax({
             url: DOMAIN + "/include/process.php",
             method: "POST",

@@ -49,7 +49,7 @@ class DBOperations
 
 // $opr = new DBOperations();
 
-// echo $opr->addCategory(1, "SMmartphones");
+// echo $opr->addCategory(1, "Smartphones");
 
 // echo "<pre>";
 

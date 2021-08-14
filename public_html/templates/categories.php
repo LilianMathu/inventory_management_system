@@ -13,16 +13,15 @@
                 <form id="form_category" onsubmit="return false">
                     <div class="form-group">
                         <label>Category Name</label>
-                        <input type="text" class="form-control" id="categoryName" name="categoryName" id="categoryName"
-                            placeholder="Category Name">
+                        <input type="text" class="form-control" id="category_name" name="category_name"
+                            id="category_name" placeholder="Category Name">
                         <small id="cat_error" class="form-text text-muted"></small>
                     </div>
                     <div class="form-group">
                         <label>Parent category</label>
-                        <select class="form-control" name="parent-cat" id="parent-cat">
+                        <select class="form-control" name="parent_cat" id="parent_cat">
                             <option value="0">Root</option>
                         </select>
-                        <small id="cat_error"></small>
                     </div>
                     <button type="submit" class="btn btn-primary">Add</button>
                     <button type="submit" class="btn btn-primary">Update</button>
