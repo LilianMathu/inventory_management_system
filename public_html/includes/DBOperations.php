@@ -25,8 +25,26 @@ class DBOperations
         }
         
     }
+
+    public function getAllRecords($table)
+    {
+        $pre_stmt = $this->con->prepare("select * from " .$table);
+        $pre_stmt->execute() or die($this->con->error);
+        $result = $pre_stmt->get_result();
+        $row = array();
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $rows[] = $row;
+            }
+            return $rows;            
+        }
+        return "NO_DATA";
+    }
 }
+
 $opr = new DBOperations();
-echo $opr->addCategory(0, "furniture");
+// echo $opr->addCategory(0, "furniture");
+echo "<pre>";
+print_r($opr->getAllRecords("categories"));
 
 ?>
